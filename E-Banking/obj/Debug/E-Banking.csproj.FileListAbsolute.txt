@@ -1,0 +1,7 @@
+D:\Dhruval\github\E-Banking\E-Banking\bin\E-Banking.dll.config
+D:\Dhruval\github\E-Banking\E-Banking\bin\E-Banking.dll
+D:\Dhruval\github\E-Banking\E-Banking\bin\E-Banking.pdb
+D:\Dhruval\github\E-Banking\E-Banking\obj\Debug\E-Banking.csprojAssemblyReference.cache
+D:\Dhruval\github\E-Banking\E-Banking\obj\Debug\E-Banking.csproj.CoreCompileInputs.cache
+D:\Dhruval\github\E-Banking\E-Banking\obj\Debug\E-Banking.dll
+D:\Dhruval\github\E-Banking\E-Banking\obj\Debug\E-Banking.pdb
