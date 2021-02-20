@@ -169,6 +169,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Connected Services\CrudService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\Service1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -192,9 +197,29 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\CrudService\Service1.disco" />
+    <None Include="Connected Services\CrudService\configuration91.svcinfo" />
+    <None Include="Connected Services\CrudService\configuration.svcinfo" />
+    <None Include="Connected Services\CrudService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\Service1\E_Banking_Client.Service1.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\CrudService\Service1.wsdl" />
+    <None Include="Connected Services\CrudService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CrudService\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CrudService\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CrudService\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\Service1\Service1.disco" />
     <None Include="Connected Services\Service1\configuration91.svcinfo" />
     <None Include="Connected Services\Service1\configuration.svcinfo" />
@@ -242,6 +267,7 @@
     <None Include="Connected Services\ServiceReference1\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -308,6 +334,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\CrudService\" />
     <WCFMetadataStorage Include="Connected Services\Service1\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
