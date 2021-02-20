@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51182/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51182/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/E_Banking" />
+      <xsd:import schemaLocation="http://localhost:51182/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_InsertEmpDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmpDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertEmpDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmpDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertEmpDetails_ExceptionMessageFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/E_Banking" name="detail" element="q1:ExceptionMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEmployees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployees" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEmployees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEmployees_ExceptionMessageFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/E_Banking" name="detail" element="q2:ExceptionMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateEmpDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmpDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateEmpDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmpDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateEmpDetails_ExceptionMessageFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/E_Banking" name="detail" element="q3:ExceptionMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEmpDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmpDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEmpDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmpDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEmpDetails_ExceptionMessageFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/E_Banking" name="detail" element="q4:ExceptionMessage" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="InsertEmpDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertEmpDetails" message="tns:IService1_InsertEmpDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertEmpDetailsResponse" message="tns:IService1_InsertEmpDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/InsertEmpDetailsExceptionMessageFault" name="ExceptionMessageFault" message="tns:IService1_InsertEmpDetails_ExceptionMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetEmployees" message="tns:IService1_GetEmployees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetEmployeesResponse" message="tns:IService1_GetEmployees_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/GetEmployeesExceptionMessageFault" name="ExceptionMessageFault" message="tns:IService1_GetEmployees_ExceptionMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmpDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateEmpDetails" message="tns:IService1_UpdateEmpDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateEmpDetailsResponse" message="tns:IService1_UpdateEmpDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/UpdateEmpDetailsExceptionMessageFault" name="ExceptionMessageFault" message="tns:IService1_UpdateEmpDetails_ExceptionMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmpDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteEmpDetails" message="tns:IService1_DeleteEmpDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteEmpDetailsResponse" message="tns:IService1_DeleteEmpDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/DeleteEmpDetailsExceptionMessageFault" name="ExceptionMessageFault" message="tns:IService1_DeleteEmpDetails_ExceptionMessageFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertEmpDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertEmpDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault use="literal" name="ExceptionMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetEmployees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault use="literal" name="ExceptionMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmpDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateEmpDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault use="literal" name="ExceptionMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmpDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteEmpDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault use="literal" name="ExceptionMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:51182/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
