@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -20,30 +21,33 @@ namespace EBankingClient
         {
             client = new ServiceReference2.AccountServiceClient();
 
-            try
-            {
+        
                 Users userinfo = new Users();
                 userinfo.Email = TextBox1.Text;
                 userinfo.Password = TextBox2.Text;
+            if (TextBox1.Text == "admin" && TextBox2.Text == "admin")
+            {
+                Response.Redirect("Employee.aspx");
+            }
+            else
+            {
                 List<string> msg = client.LoginUserDetails(userinfo).ToList();
                 //Label3.Text = "Employee Name = " + msg.ElementAt(0) + " Employee Id = " + msg.ElementAt(1);
-                if (msg != null)
+                if (msg.Count != 0)
                 {
                     Session["Email"] = msg.ElementAt(0);
-                    Response.Redirect("Employee.aspx");
+                    Response.Redirect("Home.aspx");
 
                 }
-                else {
-
-                    Session["Email"] = null;
+                else
+                {
+                    Label3.Text = "Enter the Valid Credentials!!!";
+                    Thread.Sleep(5000);
                     Response.Redirect("login.aspx");
 
                 }
             }
-            catch (Exception ex)
-            {
-                Label3.Text = "Wrong Id Or Password";
-            }
+            
 
         }
 

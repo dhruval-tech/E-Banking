@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9aa5e236-8108-49bd-bf80-91dc5ebc3747" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53213/TransactionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TransactionService.xsd" MetadataType="Schema" ID="f85bcfaa-ebc0-4811-af1c-6e429d1e223d" SourceId="1" SourceUrl="http://localhost:53213/TransactionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TransactionService.disco" MetadataType="Disco" ID="9a5b2912-d1b7-4f9d-9392-6c1f566d7b36" SourceId="1" SourceUrl="http://localhost:53213/TransactionService.svc?disco" />
+    <MetadataFile FileName="TransactionService.wsdl" MetadataType="Wsdl" ID="b17b25ee-4ea6-4fa4-8781-4ed61a41de0e" SourceId="1" SourceUrl="http://localhost:53213/TransactionService.svc?wsdl" />
+    <MetadataFile FileName="TransactionService1.xsd" MetadataType="Schema" ID="586444a6-4f6c-4c4b-9d11-4229e3926adb" SourceId="1" SourceUrl="http://localhost:53213/TransactionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TransactionService2.xsd" MetadataType="Schema" ID="41999dcf-f7c0-4d38-a342-73753e0b6f4a" SourceId="1" SourceUrl="http://localhost:53213/TransactionService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

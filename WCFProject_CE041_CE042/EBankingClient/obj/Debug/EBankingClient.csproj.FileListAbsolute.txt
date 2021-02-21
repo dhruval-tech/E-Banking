@@ -56,3 +56,4 @@ D:\sem6\SOA\EBankingClient\obj\Debug\EBankingClient.csproj.CoreCompileInputs.cac
 D:\sem6\SOA\EBankingClient\obj\Debug\EBankingClient.csproj.CopyComplete
 D:\sem6\SOA\EBankingClient\obj\Debug\EBankingClient.dll
 D:\sem6\SOA\EBankingClient\obj\Debug\EBankingClient.pdb
+D:\sem6\SOA\EBankingClient\obj\Debug\EBankingClient.csprojAssemblyReference.cache

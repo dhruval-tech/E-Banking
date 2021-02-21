@@ -72,17 +72,17 @@
                     <asp:LinkButton ID="lbtnSelect" runat="server" CommandName="Select" Text="Select" />
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="First Name">
+            <asp:TemplateField HeaderText="Name">
                 <ItemTemplate>
                     <asp:Label ID="lblFirstName" runat="server" Text='<%#Eval("Name") %>' />
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Last Name">
+            <asp:TemplateField HeaderText="Salary">
                 <ItemTemplate>
                     <asp:Label ID="lblLastName" runat="server" Text='<%#Eval("Salary") %>' />
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Register No.">
+            <asp:TemplateField HeaderText="Dept ID">
                 <ItemTemplate>
                     <asp:Label ID="lblRegisterNo" runat="server" Text='<%#Eval("DeptId") %>' />
                 </ItemTemplate>

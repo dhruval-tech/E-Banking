@@ -185,6 +185,12 @@ namespace EBankingClient.ServiceReference2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountService/LoginUserDetails", ReplyAction="http://tempuri.org/IAccountService/LoginUserDetailsResponse")]
         System.Threading.Tasks.Task<string[]> LoginUserDetailsAsync(EBankingClient.ServiceReference2.Users userInfo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountService/getUserbyID", ReplyAction="http://tempuri.org/IAccountService/getUserbyIDResponse")]
+        EBankingClient.ServiceReference2.Users getUserbyID(string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountService/getUserbyID", ReplyAction="http://tempuri.org/IAccountService/getUserbyIDResponse")]
+        System.Threading.Tasks.Task<EBankingClient.ServiceReference2.Users> getUserbyIDAsync(string email);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -228,6 +234,14 @@ namespace EBankingClient.ServiceReference2 {
         
         public System.Threading.Tasks.Task<string[]> LoginUserDetailsAsync(EBankingClient.ServiceReference2.Users userInfo) {
             return base.Channel.LoginUserDetailsAsync(userInfo);
+        }
+        
+        public EBankingClient.ServiceReference2.Users getUserbyID(string email) {
+            return base.Channel.getUserbyID(email);
+        }
+        
+        public System.Threading.Tasks.Task<EBankingClient.ServiceReference2.Users> getUserbyIDAsync(string email) {
+            return base.Channel.getUserbyIDAsync(email);
         }
     }
 }

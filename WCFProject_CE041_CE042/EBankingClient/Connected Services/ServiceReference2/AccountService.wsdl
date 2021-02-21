@@ -20,6 +20,12 @@
   <wsdl:message name="IAccountService_LoginUserDetails_OutputMessage">
     <wsdl:part name="parameters" element="tns:LoginUserDetailsResponse" />
   </wsdl:message>
+  <wsdl:message name="IAccountService_getUserbyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserbyID" />
+  </wsdl:message>
+  <wsdl:message name="IAccountService_getUserbyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserbyIDResponse" />
+  </wsdl:message>
   <wsdl:portType name="IAccountService">
     <wsdl:operation name="Insert">
       <wsdl:input wsaw:Action="http://tempuri.org/IAccountService/Insert" message="tns:IAccountService_Insert_InputMessage" />
@@ -28,6 +34,10 @@
     <wsdl:operation name="LoginUserDetails">
       <wsdl:input wsaw:Action="http://tempuri.org/IAccountService/LoginUserDetails" message="tns:IAccountService_LoginUserDetails_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAccountService/LoginUserDetailsResponse" message="tns:IAccountService_LoginUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserbyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAccountService/getUserbyID" message="tns:IAccountService_getUserbyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAccountService/getUserbyIDResponse" message="tns:IAccountService_getUserbyID_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAccountService" type="tns:IAccountService">
@@ -43,6 +53,15 @@
     </wsdl:operation>
     <wsdl:operation name="LoginUserDetails">
       <soap:operation soapAction="http://tempuri.org/IAccountService/LoginUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserbyID">
+      <soap:operation soapAction="http://tempuri.org/IAccountService/getUserbyID" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

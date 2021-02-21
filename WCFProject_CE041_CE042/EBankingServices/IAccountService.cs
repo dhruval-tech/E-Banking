@@ -14,6 +14,8 @@ namespace EBankingServices
         String Insert(Users us);
         [OperationContract]
         List<string> LoginUserDetails(Users userInfo);
+        [OperationContract]
+        Users getUserbyID(string email);
         //[OperationContract]
         //gettestdata GetInfo();
 

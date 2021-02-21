@@ -32,7 +32,7 @@ namespace EBankingClient
             string r = client.Insert(cs);
 
             
-            Response.Redirect("Employee.aspx");
+            Response.Redirect("login.aspx");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
