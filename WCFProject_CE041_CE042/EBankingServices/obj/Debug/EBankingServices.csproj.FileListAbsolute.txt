@@ -1,0 +1,6 @@
+D:\sem6\SOA\EBankingServices\obj\Debug\EBankingServices.csproj.CoreCompileInputs.cache
+D:\sem6\SOA\EBankingServices\bin\EBankingServices.dll.config
+D:\sem6\SOA\EBankingServices\bin\EBankingServices.dll
+D:\sem6\SOA\EBankingServices\bin\EBankingServices.pdb
+D:\sem6\SOA\EBankingServices\obj\Debug\EBankingServices.dll
+D:\sem6\SOA\EBankingServices\obj\Debug\EBankingServices.pdb
