@@ -20,7 +20,11 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
+<<<<<<< HEAD:E-BankingClient/Properties/AssemblyInfo.cs
 [assembly: Guid("8b514c3e-6f1b-48dc-90ea-50ac5d06370f")]
+=======
+[assembly: Guid("b226710c-983c-4a43-87d7-4f0eeb8152fd")]
+>>>>>>> 2451de7e01ada6f45f751ea0768f269330ba610e:E-Banking_Client/Properties/AssemblyInfo.cs
 
 // Version information for an assembly consists of the following four values:
 //
